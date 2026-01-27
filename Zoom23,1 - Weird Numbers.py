@@ -1,3 +1,24 @@
+#NEXT: HCF & LCM
+a = int(input("choose a number A"))
+b = int(input("choose a number B"))
+
+c = a*b
+if a > b:
+    d = a
+else:
+    d = b
+for i in range(d,c+1):
+    if i%a == 0 and i%b == 0:
+        print(f"LCM: {i}")
+        break
+
+scf = 0
+for i in range(1,d+1):
+    if a%i == 0 and b%i == 0:
+        scf = i
+print(f"HCF: {scf}")
+
+
 chosen = input("choose a number")
 chosen = int(chosen)
 digits_list = []
@@ -11,8 +32,6 @@ for i in range(len(digits_list)):
         palindrome = False
 print(f"PALINDROME NUMBER: {palindrome}")
 
-
-#NEXT: HCF & LCM
 
 
 chosen = input("choose a Number")
